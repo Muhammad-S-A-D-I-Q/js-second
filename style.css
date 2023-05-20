@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    color: seagreen;
+    font-size: 70px;
+}
+body{
+    background-color: azure;
+    user-select: none;
+}
