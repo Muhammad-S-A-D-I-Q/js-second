@@ -138,3 +138,49 @@ document.write("<p>Marks Obtained: " +obtain+ "</p>");
 document.write("<p>Percentage: " + res.toFixed(3) + "%</p>");
 
 //end
+document.write("</br>"+"<h2>Currency in PKR</h2>");
+
+var dollar = 286.95;
+var saudiRiyal=76.52; 
+var totalC = (10*dollar)+(25*saudiRiyal);
+document.write("Total currency is "+totalC + "</br>");
+
+//end 
+document.write("</br>"+"</br>"+"In 4 Add 5\n Multiply by 10\n Divide the result by 2");
+var cal =4;
+var resul = ((cal+5)*10)/2;
+document.write("</br>"+resul);
+
+//end
+document.write("<h2>Age Calculator</h2>")
+
+var birthYear = +prompt("Enter your right Birthyear..!")
+var currentYear = 2023;
+var truthAge = currentYear-birthYear;
+document.write(birthYear+" the year you born </br>");
+document.write(currentYear+" the current year</br>");
+document.write(truthAge+" your<sup>,</sup>s truth age ...");
+
+//end
+document.write("</br><h2>The Geometrize:</h2>")
+var radius = 20
+var circumference= 125.67999999999999;
+var area = Math.PI * radius * radius ;
+document.write("The radius is "+radius+"</br>");
+document.write("The circumference is " + circumference+"</br>");
+document.write("The area is " + area.toFixed(2));
+//end
+document.write("<h2>The Lifetime Supply Calculator:</h2>");
+var favoriteSnack = "Chocolate bars";
+var currentAge = 30;
+var maximumAge = 80;
+var amountPerDays = 2;
+var remainingYears = maximumAge - currentAge;
+var totalQuantity = remainingYears * 365 * amountPerDays;
+document.write("Your favorite snack: " + favoriteSnack+"</br>");
+document.write("Current Age: " + currentAge+"</br>");
+document.write("Maximum Age: " + maximumAge+"</br>");
+document.write("Estimated amount per day: " + amountPerDay+"</br>");
+document.write("Total quantity for the rest of your life: " + totalQuantity+"</br>");
+//end
+
