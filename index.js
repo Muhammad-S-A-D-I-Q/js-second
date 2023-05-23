@@ -180,7 +180,7 @@ var totalQuantity = remainingYears * 365 * amountPerDays;
 document.write("Your favorite snack: " + favoriteSnack+"</br>");
 document.write("Current Age: " + currentAge+"</br>");
 document.write("Maximum Age: " + maximumAge+"</br>");
-document.write("Estimated amount per day: " + amountPerDay+"</br>");
+document.write("Estimated amount per day: " + amountPerDays+"</br>");
 document.write("Total quantity for the rest of your life: " + totalQuantity+"</br>");
 //end
 
