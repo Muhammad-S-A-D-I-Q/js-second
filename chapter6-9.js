@@ -75,7 +75,7 @@ var totalMarks = 100;
 var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
 var percentage = (totalObtainedMarks / (totalMarks * 3)) * 100;
 
-document.write("<table>");
+document.write("<table border='2'>");
 document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
 document.write("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks1 + "</td></tr>");
 document.write("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks2 + "</td></tr>");
