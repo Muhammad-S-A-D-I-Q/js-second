@@ -36,7 +36,7 @@ if(trafficlig === "red" || trafficlig === "Red" || trafficlig === "RED"){
   }else if (trafficlig === "yellow" || trafficlig === "Yellow" || trafficlig === "YELLOW"){
     document.write("Ready to move...");
   }else if (trafficlig === "green" || trafficlig === "Green" || trafficlig === "GREEN"){
-    document.write("Move noe");
+    document.write("Move now");
   }
   //end
   document.write("</br></br></br>");
@@ -223,11 +223,101 @@ document.write("</br></br>");
 document.write("<h2>THE NUMBER IS EVEN OR ODD</h2>");
 
 var OddOrEven = parseInt(prompt("Enter Number To Check IF Number Is EVEN or ODD"));
+var nah = "";
 
 if (OddOrEven %3 === 0){
   document.write("The Number Is ODD"); 
 }else if (OddOrEven %2 === 0){
   document.write("The number is even");
-}else {
-  document.write("You did not put the number or 1 is not even or odd");
+}else if (OddOrEven === 1 ,7,11,17) {
+  document.write("1,5,7,11,13,17...  can only divide by its own table know as prime numbers");
+}else if (OddOrEven === nah) {
+  document.write("enter a number");
 }
+
+
+
+
+
+
+document.write("</br></br>");
+
+
+document.write("</br></br>");
+
+
+
+// temperature check.........................................................................................................
+
+document.write("<h2> Temperature </h2>");
+
+var T = parseInt(prompt("Enter Temperature in number ... ! "))
+
+if(T > 40 ){
+  document.write("It is too hot out side...");
+
+}else if (T  > 30  ){
+  document.write("The weather today is normal");
+}else if (T  > 20  ){
+  document.write("Today weather is cool");
+}else if (T  > 10  ){
+  document.write("OMG ! Today's weather is soo cool .");
+}
+
+
+
+
+
+
+
+
+
+document.write("</br></br>");
+
+
+document.write("</br></br>");
+
+
+
+
+
+//calculator
+
+
+
+
+var num1 = parseFloat(prompt("Enter the first number:"));
+var num2 = parseFloat(prompt("Enter the second number:"));
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+
+var result;
+if (operation === "+") {
+  result = num1 + num2;
+} else if (operation === "-") {
+  result = num1 - num2;
+} else if (operation === "*") {
+  result = num1 * num2;
+} else if (operation === "/") {
+  // Check for division by zero
+  if (num2 === 0) {
+    alert("Error: Cannot divide by zero.");
+    result = "Invalid operation";
+  } else {
+    result = num1 / num2;
+  }
+} else if (operation === "%") {
+
+  if (num2 === 0) {
+    alert("Error: Cannot divide by zero.");
+    result = "Invalid operation";
+  } else {
+    result = num1 % num2;
+  }
+} else {
+  alert("Error: Invalid operation.");
+  result = "Invalid operation";
+}
+
+
+alert("Result: " + result);
