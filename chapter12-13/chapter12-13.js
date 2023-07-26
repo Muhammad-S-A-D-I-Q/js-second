@@ -151,69 +151,23 @@ document.write("</br></br>");
 
 document.write("<h2>Clock</h2>");
 
+// Get the time input from the user (in 24-hour clock format)
+var timeInput = prompt("Enter the time in 24-hour clock format (e.g., 1900):");
+var time = parseInt(timeInput);
 
-var time = prompt("Enter time in 24 format like 1900 ");
+// Check if the input is valid (between 0 and 2359) and has 4 digits
+if (isNaN(time) || time < 0 || time > 2359 || timeInput.length !== 4) {
+    document.write("Invalid input. Please enter a valid 24-hour clock time.");
+} else {
+    // Extract the hour and minute parts from the input
+    var hour = Math.floor(time / 100);
+    var minute = time % 100;
 
-var one = "0100";
-var two = "0200";
-var three = "0300";
-var four = "0400" ;
-var five = "0500";
-var six = " 0600";
-var seven = " 0700";
-var eight = "0800";
-var nine = "0900";
+    // Convert to 12-hour clock format
+    var period = hour >= 12 ? "PM" : "AM";
+    hour = (hour % 12) || 12;
 
-
-
-if (time === one || time == 100){
-document.write("Itz 1 am ...")
-}else if (time === two || time == 200){
-    document.write("Itz 2 am ...")
-    }else if (time === three || time == 300){
-        document.write("Itz 3 am ...")
-        }else if (time === four || time == 400){
-            document.write("Itz 4 am ...")
-            }else if (time === five || time == 500){
-                document.write("Itz 5 am ...")
-                }else if (time === six || time == 600){
-                    document.write("Itz 6 am ...")
-                    }else if (time === seven || time == 700){
-                        document.write("Itz 7 am ...")
-                        }else if (time === eight || time == 800){
-                            document.write("Itz 8 am ...")
-                            }else if (time === nine || time == 900){
-                                document.write("Itz 9 am ...")
-                                }else if (time === 1000 || time == 1000){
-                                    document.write("Itz 10 am ...")
-                                    }else if (time == 1100 ){
-                                        document.write("Itz 11 am ...")
-                                        }else if (time == 1200 ){
-                                            document.write("Itz 12 am ...")
-                                            }else if (time == 1300 ){
-                                                document.write("Itz 1 pm ...")
-                                                }else if (time == 1400 ){
-                                                    document.write("Itz 2 pm ...")
-                                                    }else if (time == 1500 ){
-                                                        document.write("Itz 3 pm ...")
-                                                        }else if (time == 1600 ){
-                                                            document.write("Itz 4 pm ...")
-                                                            }else if (time == 1700 ){
-                                                                document.write("Itz 5 pm ...")
-                                                                }else if (time == 1800 ){
-                                                                    document.write("Itz 6 pm ...")
-                                                                    }else if (time == 1900 ){
-                                                                        document.write("Itz 7 pm ...")
-                                                                        }else if (time == 2000 ){
-                                                                            document.write("Itz 8 pm ...")
-                                                                            }else if (time == 2100 ){
-                                                                                document.write("Itz 9 pm ...")
-                                                                                }else if (time == 2200 ){
-                                                                                    document.write("Itz 10 pm ...")
-                                                                                    }else if (time == 2300 ){
-                                                                                        document.write("Itz 11 pm ...")
-                                                                                        }else if (time == 2400 ){
-                                                                                            document.write("Itz 12 pm ...")
-                                                                                            }
+    document.write("The time is " + hour + ":" + (minute < 10 ? "0" + minute : minute) + " " + period);
+}
 
 
