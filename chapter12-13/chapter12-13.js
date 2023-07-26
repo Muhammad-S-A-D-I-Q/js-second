@@ -144,15 +144,31 @@ if (ASCII === 65) {
     document.write("8");
 }else if (ASCII === 57 ){
     document.write("9");
+}else{
+    document.write("Its only support one alphabet at a time and number 0 to 9");
 }
 
+document.write("</br></br>");
+
+document.write("</br></br>");
+
+/// Larger and equal
+
+document.write("<h2> The larger integer display and two integer are equal ... </h2>");
 
 
+var FirstInteger = parseInt(prompt("Enter first integer"));
+
+var secondInteger = parseInt(prompt("Enter second integer"));
+
+var Equ = FirstInteger === secondInteger ;
+
+var larger = FirstInteger > secondInteger ? FirstInteger : secondInteger ;
 
 
+document.write("The two integer are Equal too " + Equ);
+
+document.write("</br>");
 
 
-
-
-
-
+document.write("The larger integer is " + larger);
