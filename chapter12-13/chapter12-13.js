@@ -166,53 +166,53 @@ var nine = "0900";
 
 
 
-if (time === one || time ===100){
+if (time === one || time == 100){
 document.write("Itz 1 am ...")
-}else if (time === two || time === 200){
+}else if (time === two || time == 200){
     document.write("Itz 2 am ...")
-    }else if (time === three || time === 300){
+    }else if (time === three || time == 300){
         document.write("Itz 3 am ...")
-        }else if (time === four || time === 400){
+        }else if (time === four || time == 400){
             document.write("Itz 4 am ...")
-            }else if (time === five || time === 500){
+            }else if (time === five || time == 500){
                 document.write("Itz 5 am ...")
-                }else if (time === six || time === 600){
+                }else if (time === six || time == 600){
                     document.write("Itz 6 am ...")
-                    }else if (time === seven || time === 700){
+                    }else if (time === seven || time == 700){
                         document.write("Itz 7 am ...")
-                        }else if (time === eight || time === 800){
+                        }else if (time === eight || time == 800){
                             document.write("Itz 8 am ...")
-                            }else if (time === nine || time === 900){
+                            }else if (time === nine || time == 900){
                                 document.write("Itz 9 am ...")
-                                }else if (time === 1000 || time === 1000){
+                                }else if (time === 1000 || time == 1000){
                                     document.write("Itz 10 am ...")
-                                    }else if (time === 1100 ){
+                                    }else if (time == 1100 ){
                                         document.write("Itz 11 am ...")
-                                        }else if (time === 1200 ){
+                                        }else if (time == 1200 ){
                                             document.write("Itz 12 am ...")
-                                            }else if (time === 1300 ){
+                                            }else if (time == 1300 ){
                                                 document.write("Itz 1 pm ...")
-                                                }else if (time === 1400 ){
+                                                }else if (time == 1400 ){
                                                     document.write("Itz 2 pm ...")
-                                                    }else if (time === 1500 ){
+                                                    }else if (time == 1500 ){
                                                         document.write("Itz 3 pm ...")
-                                                        }else if (time === 1600 ){
+                                                        }else if (time == 1600 ){
                                                             document.write("Itz 4 pm ...")
-                                                            }else if (time === 1700 ){
+                                                            }else if (time == 1700 ){
                                                                 document.write("Itz 5 pm ...")
-                                                                }else if (time === 1800 ){
+                                                                }else if (time == 1800 ){
                                                                     document.write("Itz 6 pm ...")
-                                                                    }else if (time === 1900 ){
+                                                                    }else if (time == 1900 ){
                                                                         document.write("Itz 7 pm ...")
-                                                                        }else if (time === 2000 ){
+                                                                        }else if (time == 2000 ){
                                                                             document.write("Itz 8 pm ...")
-                                                                            }else if (time === 2100 ){
+                                                                            }else if (time == 2100 ){
                                                                                 document.write("Itz 9 pm ...")
-                                                                                }else if (time === 2200 ){
+                                                                                }else if (time == 2200 ){
                                                                                     document.write("Itz 10 pm ...")
-                                                                                    }else if (time === 2300 ){
+                                                                                    }else if (time == 2300 ){
                                                                                         document.write("Itz 11 pm ...")
-                                                                                        }else if (time === 2400 ){
+                                                                                        }else if (time == 2400 ){
                                                                                             document.write("Itz 12 pm ...")
                                                                                             }
 
